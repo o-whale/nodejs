@@ -19,7 +19,7 @@ run*)
       --network local \
       -u root \
       -h $name@$(hostname) \
-      -dt owhale/node:latest
+      -dt owhale/nodejs:latest
   elif [ "$container_status" = "exited" ]; then
     docker start $name
   fi
