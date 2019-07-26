@@ -18,6 +18,12 @@ run*)
       --name $name \
       --network local \
       -u root \
+      -p 18080:18080 \
+      -p 18081:18081 \
+      -p 18082:18082 \
+      -p 18083:18083 \
+      -p 18084:18084 \
+      -p 18085:18085 \
       -h $name@$(hostname) \
       -dt owhale/nodejs:latest
   elif [ "$container_status" = "exited" ]; then
