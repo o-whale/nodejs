@@ -9,7 +9,7 @@ name=${2:-node}
 
 case $1 in
 build*)
-  docker build -t owhale/node:latest .
+  docker build -t owhale/nodejs:latest .
   ;;
 run*)
   container_status=$(docker container inspect --format='{{.State.Status}}' $name)
