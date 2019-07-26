@@ -18,6 +18,7 @@ run*)
       --name $name \
       --network local \
       -u root \
+      -v $(pwd)/data:/root \
       -p 18080:18080 \
       -p 18081:18081 \
       -p 18082:18082 \
