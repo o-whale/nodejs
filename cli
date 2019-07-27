@@ -17,6 +17,7 @@ run*)
     docker run \
       --name $name \
       --network local \
+      --restart always \
       -u root \
       -v $(pwd)/data:/root/data \
       -p 18080:18080 \
